@@ -7,7 +7,7 @@ class Person {
     required this.answer,
   });
 
-  Person copywith({
+  Person copyWith({
     String? name,
     String? answer,
   }) {
@@ -16,7 +16,7 @@ class Person {
   factory Person.fromJson(Map<String, dynamic> json) {
     return Person(
       name: json['name'],
-      answer: json['answer'], // Explicitly convert to int
+      answer: json['answer'],
     );
   }
 

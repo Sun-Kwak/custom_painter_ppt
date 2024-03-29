@@ -1,12 +1,8 @@
-
-
-//Copy this CustomPainter code to the Bottom of the File
 import 'package:flutter/material.dart';
 
 class SmokePainter extends CustomPainter {
   final double animationValue;
   final double t;
-
 
   SmokePainter({required this.animationValue, required this.t});
 
@@ -108,10 +104,10 @@ class SmokePainter extends CustomPainter {
         246.612 + (animationValue * 10));
     path_10.close();
 
-    Paint paint_10_fill = Paint()..style = PaintingStyle.fill;
-    paint_10_fill.color =
-        Color(0xffE8E8E8).withOpacity((0.3 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_10, paint_10_fill);
+    Paint paint10Fill = Paint()..style = PaintingStyle.fill;
+    paint10Fill.color =
+        const Color(0xffE8E8E8).withOpacity((0.3 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_10, paint10Fill);
 
   }
 

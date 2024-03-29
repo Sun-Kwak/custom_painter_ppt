@@ -1,9 +1,9 @@
-
 import 'package:flutter/material.dart';
+
 class BorderCustomPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
-    Paint paint_fill_0 = Paint()
+    Paint paintFill0 = Paint()
       ..color = Colors.transparent
       ..style = PaintingStyle.fill
       ..strokeWidth = 3
@@ -18,18 +18,17 @@ class BorderCustomPainter extends CustomPainter {
     path_0.lineTo(200, 0);
     path_0.lineTo(180, 0);
 
-    canvas.drawPath(path_0, paint_fill_0);
+    canvas.drawPath(path_0, paintFill0);
 
-    Paint paint_stroke_0 = Paint()
+    Paint paintStroke0 = Paint()
       ..color = Colors.blueGrey.withOpacity(0.8)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 0
       ..strokeCap = StrokeCap.butt
       ..strokeJoin = StrokeJoin.miter;
 
-    canvas.drawPath(path_0, paint_stroke_0);
+    canvas.drawPath(path_0, paintStroke0);
 
-    // Draw the "참석자" text at (130, 0)
     TextPainter textPainter = TextPainter(
       text: TextSpan(
         text: '참석자',
@@ -40,7 +39,7 @@ class BorderCustomPainter extends CustomPainter {
     );
 
     textPainter.layout();
-    textPainter.paint(canvas, Offset(135, -5));
+    textPainter.paint(canvas, const Offset(135, -5));
   }
 
   @override

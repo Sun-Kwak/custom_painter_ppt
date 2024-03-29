@@ -5,8 +5,8 @@ class QuizContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 500,
+    return const SizedBox(
+      height: 550,
       width: 600,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

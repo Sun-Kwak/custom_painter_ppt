@@ -1,6 +1,3 @@
-
-
-//Copy this CustomPainter code to the Bottom of the File
 import 'package:flutter/material.dart';
 
 class SnowmanPainter extends CustomPainter {
@@ -23,10 +20,10 @@ class SnowmanPainter extends CustomPainter {
     path_39.cubicTo(841.255, 443.181, 849.314, 451.24, 849.314, 461.181);
     path_39.close();
 
-    Paint paint_39_fill = Paint()..style = PaintingStyle.fill;
-    paint_39_fill.color =
+    Paint paint39Fill = Paint()..style = PaintingStyle.fill;
+    paint39Fill.color =
         color.withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_39, paint_39_fill);
+    canvas.drawPath(path_39, paint39Fill);
 
     Path path_40 = Path();
     path_40.moveTo(879.314, 521.931);
@@ -36,10 +33,10 @@ class SnowmanPainter extends CustomPainter {
     path_40.cubicTo(857.488, 473.181, 879.314, 495.007, 879.314, 521.931);
     path_40.close();
 
-    Paint paint_40_fill = Paint()..style = PaintingStyle.fill;
-    paint_40_fill.color =
+    Paint paint40Fill = Paint()..style = PaintingStyle.fill;
+    paint40Fill.color =
         color.withOpacity((0.3 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_40, paint_40_fill);
+    canvas.drawPath(path_40, paint40Fill);
 
     Path path_41 = Path();
     path_41.moveTo(832.902, 459.681);
@@ -51,10 +48,10 @@ class SnowmanPainter extends CustomPainter {
     path_41.lineTo(832.902, 459.681);
     path_41.close();
 
-    Paint paint_41_fill = Paint()..style = PaintingStyle.fill;
-    paint_41_fill.color =
-        Color(0xffFFC000).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_41, paint_41_fill);
+    Paint paint41Fill = Paint()..style = PaintingStyle.fill;
+    paint41Fill.color =
+        const Color(0xffFFC000).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_41, paint41Fill);
 
     Path path_42 = Path();
     path_42.moveTo(829.814, 456.681);
@@ -64,10 +61,10 @@ class SnowmanPainter extends CustomPainter {
     path_42.cubicTo(829.142, 455.181, 829.814, 455.853, 829.814, 456.681);
     path_42.close();
 
-    Paint paint_42_fill = Paint()..style = PaintingStyle.fill;
-    paint_42_fill.color =
-        Color(0xff505050).withOpacity((0.2 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_42, paint_42_fill);
+    Paint paint42Fill = Paint()..style = PaintingStyle.fill;
+    paint42Fill.color =
+        const Color(0xff505050).withOpacity((0.2 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_42, paint42Fill);
 
     Path path_43 = Path();
     path_43.moveTo(838.814, 456.681);
@@ -77,10 +74,10 @@ class SnowmanPainter extends CustomPainter {
     path_43.cubicTo(838.142, 455.181, 838.814, 455.853, 838.814, 456.681);
     path_43.close();
 
-    Paint paint_43_fill = Paint()..style = PaintingStyle.fill;
-    paint_43_fill.color =
-        Color(0xff505050).withOpacity((0.4 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_43, paint_43_fill);
+    Paint paint43Fill = Paint()..style = PaintingStyle.fill;
+    paint43Fill.color =
+        const Color(0xff505050).withOpacity((0.4 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_43, paint43Fill);
 
     Path path_44 = Path();
     path_44.moveTo(886.815, 471.681);
@@ -104,10 +101,10 @@ class SnowmanPainter extends CustomPainter {
     path_44.cubicTo(888.315, 472.353, 887.643, 471.681, 886.815, 471.681);
     path_44.close();
 
-    Paint paint_44_fill = Paint()..style = PaintingStyle.fill;
-    paint_44_fill.color =
-        Color(0xff505050).withOpacity((0.3 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_44, paint_44_fill);
+    Paint paint44Fill = Paint()..style = PaintingStyle.fill;
+    paint44Fill.color =
+        const Color(0xff505050).withOpacity((0.3 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_44, paint44Fill);
 
     Path path_45 = Path();
     path_45.moveTo(809.875, 490.121);
@@ -134,10 +131,10 @@ class SnowmanPainter extends CustomPainter {
     path_45.cubicTo(790.005, 474.529, 789.985, 474.515, 790.013, 474.501);
     path_45.close();
 
-    Paint paint_45_fill = Paint()..style = PaintingStyle.fill;
-    paint_45_fill.color =
-        Color(0xff2F2F2F).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_45, paint_45_fill);
+    Paint paint45Fill = Paint()..style = PaintingStyle.fill;
+    paint45Fill.color =
+        const Color(0xff2F2F2F).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_45, paint45Fill);
 
   }
 

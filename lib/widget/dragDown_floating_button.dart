@@ -1,16 +1,11 @@
 import 'dart:math';
-
-import 'package:custom_painter/model/answer_group_model.dart';
 import 'package:custom_painter/model/person_model.dart';
 import 'package:custom_painter/painter/border_custom_painter.dart';
-import 'package:custom_painter/painter/button_painter.dart';
 import 'package:custom_painter/provider/person_provider.dart';
 import 'package:custom_painter/widget/text_divider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:collection/collection.dart';
-import 'package:state_notifier/state_notifier.dart';
-import 'package:riverpod/riverpod.dart';
 
 class DragDownFloatingActionButton extends ConsumerStatefulWidget {
   const DragDownFloatingActionButton({super.key});
@@ -25,13 +20,12 @@ class DragDownFloatingActionButtonState
     with TickerProviderStateMixin {
   TextEditingController nameController = TextEditingController();
   Person updatingPerson = Person.empty();
-  double _fabPositionX = 50;
+  final double _fabPositionX = 50;
   double _fabPositionY = -965;
   double fabSize = 200.0;
   bool isPanUpdating = false;
   bool isSquare = true;
   late AnimationController _controller;
-  late Tween<double> _widthTween;
   bool shouldShowFab = true;
   bool fromLeft = true;
   bool isSelected = false;
@@ -41,19 +35,16 @@ class DragDownFloatingActionButtonState
   void initState() {
     super.initState();
 
-    // Initialize animation controller and width tween
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 1000),
     );
-
-    _widthTween = Tween<double>(begin: fabSize * 0.8, end: fabSize);
   }
 
   void _showConfirmationDialog(BuildContext context) {
     final personList = ref.watch(personProvider);
     List<String> rightAnswerList = personList
-        .where((person) => person.answer == '3')
+        .where((person) => person.answer == '7')
         .map((person) => person.name)
         .toList();
     String namesSeparatedByCommas = rightAnswerList.join(', ');
@@ -66,18 +57,18 @@ class DragDownFloatingActionButtonState
             color: Colors.amber,
             size: 50,
           ),
-          content: Container(
+          content: SizedBox(
             height: 100,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  '정답! 3',
+                  '정답! 7',
                   style: TextStyle(color: Colors.blueGrey, fontSize: 20),
                 ),
                 Text(
                   '정답자 : $namesSeparatedByCommas',
-                  style: TextStyle(color: Colors.blueGrey, fontSize: 12),
+                  style: const TextStyle(color: Colors.blueGrey, fontSize: 12),
                 ),
               ],
             ),
@@ -104,7 +95,7 @@ class DragDownFloatingActionButtonState
                 style: TextStyle(color: Colors.redAccent),
               ),
               onPressed: () {
-                Navigator.of(context).pop(); // 다이얼로그 닫기
+                Navigator.of(context).pop();
               },
             ),
           ],
@@ -123,11 +114,11 @@ class DragDownFloatingActionButtonState
               color: Colors.amber,
               size: 50,
             ),
-            content: Container(
+            content: SizedBox(
               height: 100,
               child: Center(
                 child: Text('당첨자 : $randomPersonName',
-                    style: TextStyle(color: Colors.blueGrey, fontSize: 20)),
+                    style: const TextStyle(color: Colors.blueGrey, fontSize: 20)),
               ),
             ),
             actions: [
@@ -178,11 +169,9 @@ class DragDownFloatingActionButtonState
     );
   }
 
-  // Build the draggable FAB with animation
   Widget buildDraggableFab() {
     final personController = ref.watch(personProvider.notifier);
     final List<Person> personList = ref.watch(personProvider);
-    double screenHeight = MediaQuery.of(context).size.height;
     return AnimatedBuilder(
       animation: _controller,
       builder: (context, child) {
@@ -205,33 +194,33 @@ class DragDownFloatingActionButtonState
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         height: 60,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          SizedBox(
+                          const SizedBox(
                             width: 20,
                           ),
                           CustomPaint(
                             painter: BorderCustomPainter(),
-                            child: Container(
+                            child: SizedBox(
                               width: 200,
                               height: 50,
                               child: TextFormField(
                                 controller: nameController,
                                 onChanged: (v) {
                                   updatingPerson =
-                                      updatingPerson.copywith(name: v);
+                                      updatingPerson.copyWith(name: v);
                                 },
                                 cursorColor: Colors.blueGrey,
                                 autofocus: true,
-                                style: TextStyle(color: Colors.blueGrey),
-                                decoration: InputDecoration(
+                                style: const TextStyle(color: Colors.blueGrey),
+                                decoration: const InputDecoration(
                                   border: InputBorder.none,
-                                  contentPadding: const EdgeInsets.all(5),
+                                  contentPadding: EdgeInsets.all(5),
                                 ),
                               ),
                             ),
@@ -254,15 +243,13 @@ class DragDownFloatingActionButtonState
                           ),
                         ],
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
+                      const Padding(
+                        padding: EdgeInsets.all(8.0),
                         child: TextDivider(
                           text: '명단',
                         ),
                       ),
-
-
-                      Container(
+                      SizedBox(
                         width: 300,
                         height: 400,
                         child: ListView.builder(
@@ -273,13 +260,13 @@ class DragDownFloatingActionButtonState
                           },
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
+                      const Padding(
+                        padding: EdgeInsets.all(8.0),
                         child: TextDivider(
                           text: '요약',
                         ),
                       ),
-                      Container(
+                      SizedBox(
                         width: 300,
                         height: 250,
                         child: buildAnswerGroupText(),
@@ -293,7 +280,7 @@ class DragDownFloatingActionButtonState
                                 _showConfirmationDialog(context);
                               });
                             },
-                            child: Text('정답')),
+                            child: const Text('정답')),
                       )
                     ],
                   ),
@@ -320,7 +307,7 @@ class DragDownFloatingActionButtonState
       String namesString = names.join(', ');
 
       return Container(
-          padding: EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(8.0),
           decoration: BoxDecoration(
               border: Border.all(
                   color: isSelected == true && answer == '3'
@@ -334,10 +321,12 @@ class DragDownFloatingActionButtonState
 
     return Padding(
       padding: const EdgeInsets.all(20.0),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: textWidgets,
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: textWidgets,
+        ),
       ),
     );
   }
@@ -352,7 +341,7 @@ class DragDownFloatingActionButtonState
     Person updatingPerson = person;
     final personController = ref.watch(personProvider.notifier);
 
-    return Container(
+    return SizedBox(
       width: 300,
       height: 60,
       child: Row(
@@ -367,7 +356,7 @@ class DragDownFloatingActionButtonState
                 Icons.clear,
                 color: Colors.blueGrey.withOpacity(0.8),
               )),
-          Container(
+          SizedBox(
               width: 80,
               height: 50,
               child: Center(
@@ -375,13 +364,13 @@ class DragDownFloatingActionButtonState
                 person.name,
                 style: TextStyle(color: Colors.blueGrey.withOpacity(0.8)),
               ))),
-          Container(
+          SizedBox(
             width: 80,
             height: 50,
             child: TextFormField(
               style: TextStyle(color: Colors.blueGrey.withOpacity(0.8)),
               onChanged: (value) {
-                updatingPerson = updatingPerson.copywith(answer: value);
+                updatingPerson = updatingPerson.copyWith(answer: value);
               },
               initialValue: person.answer.toString(),
               decoration: InputDecoration(

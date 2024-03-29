@@ -32,7 +32,6 @@ class DraggableFloatingActionButtonState
   void initState() {
     super.initState();
 
-    // Initialize animation controller and width tween
     _controller = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 1000),
@@ -40,11 +39,9 @@ class DraggableFloatingActionButtonState
 
     _widthTween = Tween<double>(begin: fabSize * 0.8, end: fabSize);
 
-    // Set initial position after the widget is built
     WidgetsBinding.instance?.addPostFrameCallback((_) {
       _fabPositionX = 0;
       _fabPositionY = MediaQuery.of(context).size.height - fabSize;
-      // setState(() {}); // Trigger rebuild after setting the initial position.
     });
   }
 
@@ -69,7 +66,6 @@ class DraggableFloatingActionButtonState
     );
   }
 
-  // Build the draggable FAB with animation
   Widget buildDraggableFab() {
     double screenWidth = MediaQuery.of(context).size.width;
     return GestureDetector(
@@ -141,7 +137,6 @@ class DraggableFloatingActionButtonState
     );
   }
 
-  // Build the hidden FAB when shouldShowFab is false
   Widget buildHiddenFab(double screenWidth) {
     return Container(
       height: fabSize,
@@ -167,19 +162,19 @@ class DraggableFloatingActionButtonState
               color: Colors.white,
             ),
           ),
-          SizedBox(width: 10,),
+          const SizedBox(width: 10,),
           GestureDetector(
               onTap: widget.paintTap,
               child: const Icon(Icons.format_paint,color: Colors.white,)),
-          SizedBox(width: 10,),
+          const SizedBox(width: 10,),
           GestureDetector(
               onTap: widget.gridPaperTap,
               child: const Icon(Icons.grid_4x4,color: Colors.white,)),
-          SizedBox(width: 10,),
+          const SizedBox(width: 10,),
           GestureDetector(
               onTap: widget.gridTap,
               child: const Icon(Icons.grid_on,color: Colors.white,)),
-          SizedBox(width: 10,),
+          const SizedBox(width: 10,),
           fromLeft
               ? GestureDetector(
             onTap: () {

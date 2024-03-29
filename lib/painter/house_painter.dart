@@ -1,6 +1,3 @@
-
-
-//Copy this CustomPainter code to the Bottom of the File
 import 'package:flutter/material.dart';
 
 class HouseCustomPainter extends CustomPainter {
@@ -45,10 +42,10 @@ class HouseCustomPainter extends CustomPainter {
     path_0.cubicTo(801.154, 368.113, 799.536, 365.084, 796.951, 363.115);
     path_0.close();
 
-    Paint paint_0_fill = Paint()..style = PaintingStyle.fill;
-    paint_0_fill.color =
-        Color(0xff737373).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_0, paint_0_fill);
+    Paint paint0Fill = Paint()..style = PaintingStyle.fill;
+    paint0Fill.color =
+        const Color(0xff737373).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_0, paint0Fill);
 
     Path path_1 = Path();
     path_1.moveTo(548.568, 423.184);
@@ -82,10 +79,10 @@ class HouseCustomPainter extends CustomPainter {
     path_1.lineTo(548.568, 423.184);
     path_1.close();
 
-    Paint paint_1_fill = Paint()..style = PaintingStyle.fill;
-    paint_1_fill.color =
-        Color(0xff737373).withOpacity((0.2 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_1, paint_1_fill);
+    Paint paint1Fill = Paint()..style = PaintingStyle.fill;
+    paint1Fill.color =
+        const Color(0xff737373).withOpacity((0.2 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_1, paint1Fill);
 
     Path path_2 = Path();
     path_2.moveTo(607.559, 373.254);
@@ -123,10 +120,10 @@ class HouseCustomPainter extends CustomPainter {
     path_2.cubicTo(612.151, 378.714, 610.383, 375.404, 607.559, 373.254);
     path_2.close();
 
-    Paint paint_2_fill = Paint()..style = PaintingStyle.fill;
-    paint_2_fill.color =
-        Color(0xff505050).withOpacity((0.15 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_2, paint_2_fill);
+    Paint paint2Fill = Paint()..style = PaintingStyle.fill;
+    paint2Fill.color =
+        const Color(0xff505050).withOpacity((0.15 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_2, paint2Fill);
 
     Path path_3 = Path();
     path_3.moveTo(753.451, 328.615);
@@ -164,10 +161,10 @@ class HouseCustomPainter extends CustomPainter {
     path_3.cubicTo(757.654, 333.613, 756.036, 330.584, 753.451, 328.615);
     path_3.close();
 
-    Paint paint_3_fill = Paint()..style = PaintingStyle.fill;
-    paint_3_fill.color =
-        Color(0xffD0D0D0).withOpacity((0.2 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_3, paint_3_fill);
+    Paint paint3Fill = Paint()..style = PaintingStyle.fill;
+    paint3Fill.color =
+        const Color(0xffD0D0D0).withOpacity((0.2 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_3, paint3Fill);
 
     Path path_4 = Path();
     path_4.moveTo(887.993, 475.839);
@@ -205,10 +202,10 @@ class HouseCustomPainter extends CustomPainter {
     path_4.cubicTo(894.139, 483.147, 891.772, 478.717, 887.993, 475.839);
     path_4.close();
 
-    Paint paint_4_fill = Paint()..style = PaintingStyle.fill;
-    paint_4_fill.color =
-        Color(0xff737373).withOpacity((0.4 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_4, paint_4_fill);
+    Paint paint4Fill = Paint()..style = PaintingStyle.fill;
+    paint4Fill.color =
+        const Color(0xff737373).withOpacity((0.4 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_4, paint4Fill);
 
     Path path_5 = Path();
     path_5.moveTo(774.17, 254.715);
@@ -217,9 +214,9 @@ class HouseCustomPainter extends CustomPainter {
     path_5.lineTo(774.17, 273.971);
     path_5.close();
 
-    Paint paint_5_fill = Paint()..style = PaintingStyle.fill;
-    paint_5_fill.color = Color(0xff2F2F2F).withOpacity(1.0);
-    canvas.drawPath(path_5, paint_5_fill);
+    Paint paint5Fill = Paint()..style = PaintingStyle.fill;
+    paint5Fill.color = const Color(0xff2F2F2F).withOpacity(1.0);
+    canvas.drawPath(path_5, paint5Fill);
 
     Path path_6 = Path();
     path_6.moveTo(774.314, 269.191);
@@ -232,10 +229,10 @@ class HouseCustomPainter extends CustomPainter {
     path_6.cubicTo(774.464, 274.02, 774.314, 269.191, 774.314, 269.191);
     path_6.close();
 
-    Paint paint_6_fill = Paint()..style = PaintingStyle.fill;
-    paint_6_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.3 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_6, paint_6_fill);
+    Paint paint6Fill = Paint()..style = PaintingStyle.fill;
+    paint6Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.3 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_6, paint6Fill);
 
     Path path_7 = Path();
     path_7.moveTo(813.459, 417.785);
@@ -245,10 +242,10 @@ class HouseCustomPainter extends CustomPainter {
     path_7.lineTo(807.314, 269.181);
     path_7.close();
 
-    Paint paint_7_fill = Paint()..style = PaintingStyle.fill;
-    paint_7_fill.color =
-        Color(0xffE4E4E4).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_7, paint_7_fill);
+    Paint paint7Fill = Paint()..style = PaintingStyle.fill;
+    paint7Fill.color =
+        const Color(0xffE4E4E4).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_7, paint7Fill);
 
     Path path_8 = Path();
     path_8.moveTo(789.17, 417.785);
@@ -257,10 +254,10 @@ class HouseCustomPainter extends CustomPainter {
     path_8.lineTo(789.17, 269.181);
     path_8.close();
 
-    Paint paint_8_fill = Paint()..style = PaintingStyle.fill;
-    paint_8_fill.color =
-        Color(0xffD0D0D0).withOpacity((0.15 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_8, paint_8_fill);
+    Paint paint8Fill = Paint()..style = PaintingStyle.fill;
+    paint8Fill.color =
+        const Color(0xffD0D0D0).withOpacity((0.15 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_8, paint8Fill);
 
     Path path_9 = Path();
     path_9.moveTo(807.315, 283.431);
@@ -293,10 +290,10 @@ class HouseCustomPainter extends CustomPainter {
     path_9.lineTo(781.065, 283.431);
     path_9.close();
 
-    Paint paint_9_fill = Paint()..style = PaintingStyle.fill;
-    paint_9_fill.color =
-        Color(0xffF2F2F2).withOpacity((0.4 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_9, paint_9_fill);
+    Paint paint9Fill = Paint()..style = PaintingStyle.fill;
+    paint9Fill.color =
+        const Color(0xffF2F2F2).withOpacity((0.4 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_9, paint9Fill);
 
     Path path_11 = Path();
     path_11.moveTo(582.314, 421.431);
@@ -305,10 +302,10 @@ class HouseCustomPainter extends CustomPainter {
     path_11.lineTo(582.314, 518.181);
     path_11.close();
 
-    Paint paint_11_fill = Paint()..style = PaintingStyle.fill;
-    paint_11_fill.color =
-        Color(0xff505050).withOpacity((0.2 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_11, paint_11_fill);
+    Paint paint11Fill = Paint()..style = PaintingStyle.fill;
+    paint11Fill.color =
+        const Color(0xff505050).withOpacity((0.2 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_11, paint11Fill);
 
     Path path_12 = Path();
     path_12.moveTo(751.814, 450.681);
@@ -317,10 +314,10 @@ class HouseCustomPainter extends CustomPainter {
     path_12.lineTo(751.814, 473.181);
     path_12.close();
 
-    Paint paint_12_fill = Paint()..style = PaintingStyle.fill;
-    paint_12_fill.color =
-        Color(0xffFFC000).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_12, paint_12_fill);
+    Paint paint12Fill = Paint()..style = PaintingStyle.fill;
+    paint12Fill.color =
+        const Color(0xffFFC000).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_12, paint12Fill);
 
     Path path_13 = Path();
     path_13.moveTo(751.814, 480.681);
@@ -329,10 +326,10 @@ class HouseCustomPainter extends CustomPainter {
     path_13.lineTo(751.814, 503.181);
     path_13.close();
 
-    Paint paint_13_fill = Paint()..style = PaintingStyle.fill;
-    paint_13_fill.color =
-        Color(0xffFFC000).withOpacity((0.05 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_13, paint_13_fill);
+    Paint paint13Fill = Paint()..style = PaintingStyle.fill;
+    paint13Fill.color =
+        const Color(0xffFFC000).withOpacity((0.05 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_13, paint13Fill);
 
     Path path_14 = Path();
     path_14.moveTo(643.814, 450.681);
@@ -341,10 +338,10 @@ class HouseCustomPainter extends CustomPainter {
     path_14.lineTo(643.814, 473.181);
     path_14.close();
 
-    Paint paint_14_fill = Paint()..style = PaintingStyle.fill;
-    paint_14_fill.color =
-        Color(0xff737373).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_14, paint_14_fill);
+    Paint paint14Fill = Paint()..style = PaintingStyle.fill;
+    paint14Fill.color =
+        const Color(0xff737373).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_14, paint14Fill);
 
     Path path_15 = Path();
     path_15.moveTo(643.814, 480.681);
@@ -353,10 +350,10 @@ class HouseCustomPainter extends CustomPainter {
     path_15.lineTo(643.814, 503.181);
     path_15.close();
 
-    Paint paint_15_fill = Paint()..style = PaintingStyle.fill;
-    paint_15_fill.color =
-        Color(0xff737373).withOpacity((0.24 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_15, paint_15_fill);
+    Paint paint15Fill = Paint()..style = PaintingStyle.fill;
+    paint15Fill.color =
+        const Color(0xff737373).withOpacity((0.24 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_15, paint15Fill);
 
     Path path_16 = Path();
     path_16.moveTo(613.814, 450.681);
@@ -365,10 +362,10 @@ class HouseCustomPainter extends CustomPainter {
     path_16.lineTo(613.814, 473.181);
     path_16.close();
 
-    Paint paint_16_fill = Paint()..style = PaintingStyle.fill;
-    paint_16_fill.color =
-        Color(0xff737373).withOpacity((0.17 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_16, paint_16_fill);
+    Paint paint16Fill = Paint()..style = PaintingStyle.fill;
+    paint16Fill.color =
+        const Color(0xff737373).withOpacity((0.17 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_16, paint16Fill);
 
     Path path_17 = Path();
     path_17.moveTo(613.814, 480.681);
@@ -377,10 +374,10 @@ class HouseCustomPainter extends CustomPainter {
     path_17.lineTo(613.814, 503.181);
     path_17.close();
 
-    Paint paint_17_fill = Paint()..style = PaintingStyle.fill;
-    paint_17_fill.color =
-        Color(0xff737373).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_17, paint_17_fill);
+    Paint paint17Fill = Paint()..style = PaintingStyle.fill;
+    paint17Fill.color =
+        const Color(0xff737373).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_17, paint17Fill);
 
     Path path_18 = Path();
     path_18.moveTo(672.314, 450.681);
@@ -389,10 +386,10 @@ class HouseCustomPainter extends CustomPainter {
     path_18.lineTo(672.314, 473.181);
     path_18.close();
 
-    Paint paint_18_fill = Paint()..style = PaintingStyle.fill;
-    paint_18_fill.color =
-        Color(0xff737373).withOpacity((0.15 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_18, paint_18_fill);
+    Paint paint18Fill = Paint()..style = PaintingStyle.fill;
+    paint18Fill.color =
+        const Color(0xff737373).withOpacity((0.15 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_18, paint18Fill);
 
     Path path_19 = Path();
     path_19.moveTo(672.314, 480.681);
@@ -401,10 +398,10 @@ class HouseCustomPainter extends CustomPainter {
     path_19.lineTo(672.314, 503.181);
     path_19.close();
 
-    Paint paint_19_fill = Paint()..style = PaintingStyle.fill;
-    paint_19_fill.color =
-        Color(0xff737373).withOpacity((0.3 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_19, paint_19_fill);
+    Paint paint19Fill = Paint()..style = PaintingStyle.fill;
+    paint19Fill.color =
+        const Color(0xff737373).withOpacity((0.3 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_19, paint19Fill);
 
     Path path_20 = Path();
     path_20.moveTo(834.314, 503.181);
@@ -418,10 +415,10 @@ class HouseCustomPainter extends CustomPainter {
     path_20.lineTo(834.314, 503.181);
     path_20.close();
 
-    Paint paint_20_fill = Paint()..style = PaintingStyle.fill;
-    paint_20_fill.color =
-        Color(0xffE4E4E4).withOpacity((0.4 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_20, paint_20_fill);
+    Paint paint20Fill = Paint()..style = PaintingStyle.fill;
+    paint20Fill.color =
+        const Color(0xffE4E4E4).withOpacity((0.4 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_20, paint20Fill);
 
     Path path_21 = Path();
     path_21.moveTo(709.686, 518.931);
@@ -479,10 +476,10 @@ class HouseCustomPainter extends CustomPainter {
     path_21.lineTo(644.565, 517.431);
     path_21.close();
 
-    Paint paint_21_fill = Paint()..style = PaintingStyle.fill;
-    paint_21_fill.color =
-        Color(0xffF0F0F0).withOpacity((0.3 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_21, paint_21_fill);
+    Paint paint21Fill = Paint()..style = PaintingStyle.fill;
+    paint21Fill.color =
+        const Color(0xffF0F0F0).withOpacity((0.3 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_21, paint21Fill);
 
     Path path_22 = Path();
     path_22.moveTo(786.299, 503.706);
@@ -497,10 +494,10 @@ class HouseCustomPainter extends CustomPainter {
     path_22.lineTo(786.299, 503.707);
     path_22.close();
 
-    Paint paint_22_fill = Paint()..style = PaintingStyle.fill;
-    paint_22_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.3 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_22, paint_22_fill);
+    Paint paint22Fill = Paint()..style = PaintingStyle.fill;
+    paint22Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.3 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_22, paint22Fill);
 
     Path path_23 = Path();
     path_23.moveTo(529.214, 323.981);
@@ -516,10 +513,10 @@ class HouseCustomPainter extends CustomPainter {
     path_23.cubicTo(530.114, 323.581, 529.514, 323.581, 529.214, 323.981);
     path_23.close();
 
-    Paint paint_23_fill = Paint()..style = PaintingStyle.fill;
-    paint_23_fill.color =
-        Color(0xff737373).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_23, paint_23_fill);
+    Paint paint23Fill = Paint()..style = PaintingStyle.fill;
+    paint23Fill.color =
+        const Color(0xff737373).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_23, paint23Fill);
 
     Path path_24 = Path();
     path_24.moveTo(517.182, 450.681);
@@ -528,10 +525,10 @@ class HouseCustomPainter extends CustomPainter {
     path_24.lineTo(517.182, 473.181);
     path_24.close();
 
-    Paint paint_24_fill = Paint()..style = PaintingStyle.fill;
-    paint_24_fill.color =
-        Color(0xffFFC000).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_24, paint_24_fill);
+    Paint paint24Fill = Paint()..style = PaintingStyle.fill;
+    paint24Fill.color =
+        const Color(0xffFFC000).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_24, paint24Fill);
 
     Path path_25 = Path();
     path_25.moveTo(546.314, 450.681);
@@ -540,10 +537,10 @@ class HouseCustomPainter extends CustomPainter {
     path_25.lineTo(546.314, 473.181);
     path_25.close();
 
-    Paint paint_25_fill = Paint()..style = PaintingStyle.fill;
-    paint_25_fill.color =
-        Color(0xffFFC000).withOpacity((0.15 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_25, paint_25_fill);
+    Paint paint25Fill = Paint()..style = PaintingStyle.fill;
+    paint25Fill.color =
+        const Color(0xffFFC000).withOpacity((0.15 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_25, paint25Fill);
 
     Path path_26 = Path();
     path_26.moveTo(517.182, 480.681);
@@ -552,10 +549,10 @@ class HouseCustomPainter extends CustomPainter {
     path_26.lineTo(517.182, 503.181);
     path_26.close();
 
-    Paint paint_26_fill = Paint()..style = PaintingStyle.fill;
-    paint_26_fill.color =
-        Color(0xffFFC000).withOpacity((0.18 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_26, paint_26_fill);
+    Paint paint26Fill = Paint()..style = PaintingStyle.fill;
+    paint26Fill.color =
+        const Color(0xffFFC000).withOpacity((0.18 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_26, paint26Fill);
 
     Path path_27 = Path();
     path_27.moveTo(487.814, 450.681);
@@ -564,10 +561,10 @@ class HouseCustomPainter extends CustomPainter {
     path_27.lineTo(487.814, 473.181);
     path_27.close();
 
-    Paint paint_27_fill = Paint()..style = PaintingStyle.fill;
-    paint_27_fill.color =
-        Color(0xffFFC000).withOpacity((0.2 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_27, paint_27_fill);
+    Paint paint27Fill = Paint()..style = PaintingStyle.fill;
+    paint27Fill.color =
+        const Color(0xffFFC000).withOpacity((0.2 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_27, paint27Fill);
 
     Path path_28 = Path();
     path_28.moveTo(487.814, 480.681);
@@ -576,10 +573,10 @@ class HouseCustomPainter extends CustomPainter {
     path_28.lineTo(487.814, 503.181);
     path_28.close();
 
-    Paint paint_28_fill = Paint()..style = PaintingStyle.fill;
-    paint_28_fill.color =
-        Color(0xffFFC000).withOpacity((0.2 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_28, paint_28_fill);
+    Paint paint28Fill = Paint()..style = PaintingStyle.fill;
+    paint28Fill.color =
+        const Color(0xffFFC000).withOpacity((0.2 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_28, paint28Fill);
 
     Path path_29 = Path();
     path_29.moveTo(546.314, 480.681);
@@ -588,10 +585,10 @@ class HouseCustomPainter extends CustomPainter {
     path_29.lineTo(546.314, 503.181);
     path_29.close();
 
-    Paint paint_29_fill = Paint()..style = PaintingStyle.fill;
-    paint_29_fill.color =
-        Color(0xffFFC000).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_29, paint_29_fill);
+    Paint paint29Fill = Paint()..style = PaintingStyle.fill;
+    paint29Fill.color =
+        const Color(0xffFFC000).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_29, paint29Fill);
 
     Path path_30 = Path();
     path_30.moveTo(523.811, 323.185);
@@ -606,10 +603,10 @@ class HouseCustomPainter extends CustomPainter {
     path_30.cubicTo(523.816, 323.182, 523.813, 323.182, 523.811, 323.185);
     path_30.close();
 
-    Paint paint_30_fill = Paint()..style = PaintingStyle.fill;
-    paint_30_fill.color =
-        Color(0xffD0D0D0).withOpacity((0.4 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_30, paint_30_fill);
+    Paint paint30Fill = Paint()..style = PaintingStyle.fill;
+    paint30Fill.color =
+        const Color(0xffD0D0D0).withOpacity((0.4 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_30, paint30Fill);
 
     Path path_31 = Path();
     path_31.moveTo(762.318, 323.181);
@@ -641,10 +638,10 @@ class HouseCustomPainter extends CustomPainter {
     path_31.lineTo(762.318, 323.181);
     path_31.close();
 
-    Paint paint_31_fill = Paint()..style = PaintingStyle.fill;
-    paint_31_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.4 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_31, paint_31_fill);
+    Paint paint31Fill = Paint()..style = PaintingStyle.fill;
+    paint31Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.4 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_31, paint31Fill);
 
     Path path_32 = Path();
     path_32.moveTo(631.806, 402.67);
@@ -654,10 +651,10 @@ class HouseCustomPainter extends CustomPainter {
     path_32.cubicTo(631.817, 402.674, 631.809, 402.675, 631.806, 402.67);
     path_32.close();
 
-    Paint paint_32_fill = Paint()..style = PaintingStyle.fill;
-    paint_32_fill.color =
-        Color(0xff737373).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_32, paint_32_fill);
+    Paint paint32Fill = Paint()..style = PaintingStyle.fill;
+    paint32Fill.color =
+        const Color(0xff737373).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_32, paint32Fill);
 
     Path path_33 = Path();
     path_33.moveTo(676.814, 402.681);
@@ -669,10 +666,10 @@ class HouseCustomPainter extends CustomPainter {
     path_33.lineTo(676.814, 402.681);
     path_33.close();
 
-    Paint paint_33_fill = Paint()..style = PaintingStyle.fill;
-    paint_33_fill.color =
-        Color(0xffD0D0D0).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_33, paint_33_fill);
+    Paint paint33Fill = Paint()..style = PaintingStyle.fill;
+    paint33Fill.color =
+        const Color(0xffD0D0D0).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_33, paint33Fill);
 
     Path path_34 = Path();
     path_34.moveTo(643.49, 368.181);
@@ -681,10 +678,10 @@ class HouseCustomPainter extends CustomPainter {
     path_34.lineTo(643.49, 390.681);
     path_34.close();
 
-    Paint paint_34_fill = Paint()..style = PaintingStyle.fill;
-    paint_34_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.2 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_34, paint_34_fill);
+    Paint paint34Fill = Paint()..style = PaintingStyle.fill;
+    paint34Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.2 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_34, paint34Fill);
 
     Path path_35 = Path();
     path_35.moveTo(739.806, 402.671);
@@ -694,10 +691,10 @@ class HouseCustomPainter extends CustomPainter {
     path_35.cubicTo(739.817, 402.675, 739.81, 402.676, 739.806, 402.671);
     path_35.close();
 
-    Paint paint_35_fill = Paint()..style = PaintingStyle.fill;
-    paint_35_fill.color =
-        Color(0xff737373).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_35, paint_35_fill);
+    Paint paint35Fill = Paint()..style = PaintingStyle.fill;
+    paint35Fill.color =
+        const Color(0xff737373).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_35, paint35Fill);
 
     Path path_36 = Path();
     path_36.moveTo(784.814, 402.681);
@@ -709,10 +706,10 @@ class HouseCustomPainter extends CustomPainter {
     path_36.lineTo(784.814, 402.681);
     path_36.close();
 
-    Paint paint_36_fill = Paint()..style = PaintingStyle.fill;
-    paint_36_fill.color =
-        Color(0xffD0D0D0).withOpacity((0.2 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_36, paint_36_fill);
+    Paint paint36Fill = Paint()..style = PaintingStyle.fill;
+    paint36Fill.color =
+        const Color(0xffD0D0D0).withOpacity((0.2 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_36, paint36Fill);
 
     Path path_37 = Path();
     path_37.moveTo(751.814, 368.181);
@@ -721,10 +718,10 @@ class HouseCustomPainter extends CustomPainter {
     path_37.lineTo(751.814, 390.681);
     path_37.close();
 
-    Paint paint_37_fill = Paint()..style = PaintingStyle.fill;
-    paint_37_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_37, paint_37_fill);
+    Paint paint37Fill = Paint()..style = PaintingStyle.fill;
+    paint37Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_37, paint37Fill);
 
     Path path_38 = Path();
     path_38.moveTo(479.032, 506.115);
@@ -783,10 +780,10 @@ class HouseCustomPainter extends CustomPainter {
     path_38.cubicTo(496.015, 512.429, 487.898, 504.785, 479.032, 506.115);
     path_38.close();
 
-    Paint paint_38_fill = Paint()..style = PaintingStyle.fill;
-    paint_38_fill.color =
-        Color(0xffD0D0D0).withOpacity((0.2 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_38, paint_38_fill);
+    Paint paint38Fill = Paint()..style = PaintingStyle.fill;
+    paint38Fill.color =
+        const Color(0xffD0D0D0).withOpacity((0.2 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_38, paint38Fill);
 
     Path path_46 = Path();
     path_46.moveTo(583.686, 565.72);
@@ -796,10 +793,10 @@ class HouseCustomPainter extends CustomPainter {
     path_46.cubicTo(574.542, 563.47, 583.686, 561.992, 583.686, 565.72);
     path_46.close();
 
-    Paint paint_46_fill = Paint()..style = PaintingStyle.fill;
-    paint_46_fill.color =
-        Color(0xffE4E4E4).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_46, paint_46_fill);
+    Paint paint46Fill = Paint()..style = PaintingStyle.fill;
+    paint46Fill.color =
+        const Color(0xffE4E4E4).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_46, paint46Fill);
 
     Path path_47 = Path();
     path_47.moveTo(636.186, 579.22);
@@ -809,10 +806,10 @@ class HouseCustomPainter extends CustomPainter {
     path_47.cubicTo(627.042, 576.97, 636.186, 575.492, 636.186, 579.22);
     path_47.close();
 
-    Paint paint_47_fill = Paint()..style = PaintingStyle.fill;
-    paint_47_fill.color =
-        Color(0xffE4E4E4).withOpacity((0.2 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_47, paint_47_fill);
+    Paint paint47Fill = Paint()..style = PaintingStyle.fill;
+    paint47Fill.color =
+        const Color(0xffE4E4E4).withOpacity((0.2 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_47, paint47Fill);
 
     Path path_48 = Path();
     path_48.moveTo(470.432, 556.843);
@@ -822,10 +819,10 @@ class HouseCustomPainter extends CustomPainter {
     path_48.cubicTo(466.153, 555.79, 470.432, 555.098, 470.432, 556.843);
     path_48.close();
 
-    Paint paint_48_fill = Paint()..style = PaintingStyle.fill;
-    paint_48_fill.color =
-        Color(0xffE4E4E4).withOpacity((0.3 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_48, paint_48_fill);
+    Paint paint48Fill = Paint()..style = PaintingStyle.fill;
+    paint48Fill.color =
+        const Color(0xffE4E4E4).withOpacity((0.3 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_48, paint48Fill);
 
     Path path_49 = Path();
     path_49.moveTo(492.186, 563.023);
@@ -835,10 +832,10 @@ class HouseCustomPainter extends CustomPainter {
     path_49.cubicTo(487.908, 561.971, 492.186, 561.279, 492.186, 563.023);
     path_49.close();
 
-    Paint paint_49_fill = Paint()..style = PaintingStyle.fill;
-    paint_49_fill.color =
-        Color(0xffE4E4E4).withOpacity((0.2 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_49, paint_49_fill);
+    Paint paint49Fill = Paint()..style = PaintingStyle.fill;
+    paint49Fill.color =
+        const Color(0xffE4E4E4).withOpacity((0.2 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_49, paint49Fill);
 
     Path path_50 = Path();
     path_50.moveTo(799.686, 335.181);
@@ -848,10 +845,10 @@ class HouseCustomPainter extends CustomPainter {
     path_50.cubicTo(798.343, 332.181, 799.686, 333.524, 799.686, 335.181);
     path_50.close();
 
-    Paint paint_50_fill = Paint()..style = PaintingStyle.fill;
-    paint_50_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.4 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_50, paint_50_fill);
+    Paint paint50Fill = Paint()..style = PaintingStyle.fill;
+    paint50Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.4 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_50, paint50Fill);
 
     Path path_51 = Path();
     path_51.moveTo(838.686, 384.681);
@@ -861,10 +858,10 @@ class HouseCustomPainter extends CustomPainter {
     path_51.cubicTo(837.343, 381.681, 838.686, 383.024, 838.686, 384.681);
     path_51.close();
 
-    Paint paint_51_fill = Paint()..style = PaintingStyle.fill;
-    paint_51_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_51, paint_51_fill);
+    Paint paint51Fill = Paint()..style = PaintingStyle.fill;
+    paint51Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_51, paint51Fill);
 
     Path path_52 = Path();
     path_52.moveTo(855.186, 407.181);
@@ -874,10 +871,10 @@ class HouseCustomPainter extends CustomPainter {
     path_52.cubicTo(853.843, 404.181, 855.186, 405.524, 855.186, 407.181);
     path_52.close();
 
-    Paint paint_52_fill = Paint()..style = PaintingStyle.fill;
-    paint_52_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.2 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_52, paint_52_fill);
+    Paint paint52Fill = Paint()..style = PaintingStyle.fill;
+    paint52Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.2 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_52, paint52Fill);
 
     Path path_53 = Path();
     path_53.moveTo(564.186, 308.181);
@@ -887,10 +884,10 @@ class HouseCustomPainter extends CustomPainter {
     path_53.cubicTo(562.843, 305.181, 564.186, 306.524, 564.186, 308.181);
     path_53.close();
 
-    Paint paint_53_fill = Paint()..style = PaintingStyle.fill;
-    paint_53_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_53, paint_53_fill);
+    Paint paint53Fill = Paint()..style = PaintingStyle.fill;
+    paint53Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_53, paint53Fill);
 
     Path path_54 = Path();
     path_54.moveTo(558.314, 432.681);
@@ -900,10 +897,10 @@ class HouseCustomPainter extends CustomPainter {
     path_54.cubicTo(556.971, 429.681, 558.314, 431.024, 558.314, 432.681);
     path_54.close();
 
-    Paint paint_54_fill = Paint()..style = PaintingStyle.fill;
-    paint_54_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.3 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_54, paint_54_fill);
+    Paint paint54Fill = Paint()..style = PaintingStyle.fill;
+    paint54Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.3 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_54, paint54Fill);
 
     Path path_55 = Path();
     path_55.moveTo(714.807, 456.086);
@@ -913,10 +910,10 @@ class HouseCustomPainter extends CustomPainter {
     path_55.cubicTo(711.743, 454.925, 713.641, 454.919, 714.807, 456.086);
     path_55.close();
 
-    Paint paint_55_fill = Paint()..style = PaintingStyle.fill;
-    paint_55_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_55, paint_55_fill);
+    Paint paint55Fill = Paint()..style = PaintingStyle.fill;
+    paint55Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_55, paint55Fill);
 
     Path path_56 = Path();
     path_56.moveTo(746.308, 445.587);
@@ -926,10 +923,10 @@ class HouseCustomPainter extends CustomPainter {
     path_56.cubicTo(743.244, 444.426, 745.142, 444.42, 746.308, 445.587);
     path_56.close();
 
-    Paint paint_56_fill = Paint()..style = PaintingStyle.fill;
-    paint_56_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_56, paint_56_fill);
+    Paint paint56Fill = Paint()..style = PaintingStyle.fill;
+    paint56Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_56, paint56Fill);
 
     Path path_57 = Path();
     path_57.moveTo(661.359, 471.02);
@@ -937,10 +934,10 @@ class HouseCustomPainter extends CustomPainter {
     path_57.cubicTo(654.518, 472.204, 658.148, 468.574, 661.359, 471.02);
     path_57.close();
 
-    Paint paint_57_fill = Paint()..style = PaintingStyle.fill;
-    paint_57_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_57, paint_57_fill);
+    Paint paint57Fill = Paint()..style = PaintingStyle.fill;
+    paint57Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_57, paint57Fill);
 
     Path path_58 = Path();
     path_58.moveTo(737.384, 521.984);
@@ -948,10 +945,10 @@ class HouseCustomPainter extends CustomPainter {
     path_58.cubicTo(730.543, 523.167, 734.174, 519.538, 737.384, 521.984);
     path_58.close();
 
-    Paint paint_58_fill = Paint()..style = PaintingStyle.fill;
-    paint_58_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_58, paint_58_fill);
+    Paint paint58Fill = Paint()..style = PaintingStyle.fill;
+    paint58Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_58, paint58Fill);
 
     Path path_59 = Path();
     path_59.moveTo(523.686, 389.181);
@@ -961,10 +958,10 @@ class HouseCustomPainter extends CustomPainter {
     path_59.cubicTo(522.343, 386.181, 523.686, 387.524, 523.686, 389.181);
     path_59.close();
 
-    Paint paint_59_fill = Paint()..style = PaintingStyle.fill;
-    paint_59_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_59, paint_59_fill);
+    Paint paint59Fill = Paint()..style = PaintingStyle.fill;
+    paint59Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_59, paint59Fill);
 
     Path path_60 = Path();
     path_60.moveTo(514.686, 516.681);
@@ -974,10 +971,10 @@ class HouseCustomPainter extends CustomPainter {
     path_60.cubicTo(513.343, 513.681, 514.686, 515.024, 514.686, 516.681);
     path_60.close();
 
-    Paint paint_60_fill = Paint()..style = PaintingStyle.fill;
-    paint_60_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_60, paint_60_fill);
+    Paint paint60Fill = Paint()..style = PaintingStyle.fill;
+    paint60Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_60, paint60Fill);
 
     Path path_61 = Path();
     path_61.moveTo(513.186, 432.681);
@@ -987,10 +984,10 @@ class HouseCustomPainter extends CustomPainter {
     path_61.cubicTo(511.843, 429.681, 513.186, 431.024, 513.186, 432.681);
     path_61.close();
 
-    Paint paint_61_fill = Paint()..style = PaintingStyle.fill;
-    paint_61_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_61, paint_61_fill);
+    Paint paint61Fill = Paint()..style = PaintingStyle.fill;
+    paint61Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_61, paint61Fill);
 
     Path path_62 = Path();
     path_62.moveTo(507.186, 392.181);
@@ -1000,10 +997,10 @@ class HouseCustomPainter extends CustomPainter {
     path_62.cubicTo(505.843, 389.181, 507.186, 390.524, 507.186, 392.181);
     path_62.close();
 
-    Paint paint_62_fill = Paint()..style = PaintingStyle.fill;
-    paint_62_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_62, paint_62_fill);
+    Paint paint62Fill = Paint()..style = PaintingStyle.fill;
+    paint62Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_62, paint62Fill);
 
     Path path_63 = Path();
     path_63.moveTo(483.186, 348.681);
@@ -1013,10 +1010,10 @@ class HouseCustomPainter extends CustomPainter {
     path_63.cubicTo(481.843, 345.681, 483.186, 347.024, 483.186, 348.681);
     path_63.close();
 
-    Paint paint_63_fill = Paint()..style = PaintingStyle.fill;
-    paint_63_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_63, paint_63_fill);
+    Paint paint63Fill = Paint()..style = PaintingStyle.fill;
+    paint63Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_63, paint63Fill);
 
     Path path_64 = Path();
     path_64.moveTo(504.186, 326.181);
@@ -1026,10 +1023,10 @@ class HouseCustomPainter extends CustomPainter {
     path_64.cubicTo(502.843, 323.181, 504.186, 324.524, 504.186, 326.181);
     path_64.close();
 
-    Paint paint_64_fill = Paint()..style = PaintingStyle.fill;
-    paint_64_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_64, paint_64_fill);
+    Paint paint64Fill = Paint()..style = PaintingStyle.fill;
+    paint64Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_64, paint64Fill);
 
     Path path_65 = Path();
     path_65.moveTo(712.686, 291.681);
@@ -1039,10 +1036,10 @@ class HouseCustomPainter extends CustomPainter {
     path_65.cubicTo(711.343, 288.681, 712.686, 290.024, 712.686, 291.681);
     path_65.close();
 
-    Paint paint_65_fill = Paint()..style = PaintingStyle.fill;
-    paint_65_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_65, paint_65_fill);
+    Paint paint65Fill = Paint()..style = PaintingStyle.fill;
+    paint65Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_65, paint65Fill);
 
     Path path_66 = Path();
     path_66.moveTo(730.686, 270.681);
@@ -1052,10 +1049,10 @@ class HouseCustomPainter extends CustomPainter {
     path_66.cubicTo(729.343, 267.681, 730.686, 269.024, 730.686, 270.681);
     path_66.close();
 
-    Paint paint_66_fill = Paint()..style = PaintingStyle.fill;
-    paint_66_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_66, paint_66_fill);
+    Paint paint66Fill = Paint()..style = PaintingStyle.fill;
+    paint66Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_66, paint66Fill);
 
     Path path_67 = Path();
     path_67.moveTo(705.186, 249.681);
@@ -1065,10 +1062,10 @@ class HouseCustomPainter extends CustomPainter {
     path_67.cubicTo(703.843, 246.681, 705.186, 248.024, 705.186, 249.681);
     path_67.close();
 
-    Paint paint_67_fill = Paint()..style = PaintingStyle.fill;
-    paint_67_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_67, paint_67_fill);
+    Paint paint67Fill = Paint()..style = PaintingStyle.fill;
+    paint67Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_67, paint67Fill);
 
     Path path_68 = Path();
     path_68.moveTo(429.186, 434.181);
@@ -1078,10 +1075,10 @@ class HouseCustomPainter extends CustomPainter {
     path_68.cubicTo(427.843, 431.181, 429.186, 432.524, 429.186, 434.181);
     path_68.close();
 
-    Paint paint_68_fill = Paint()..style = PaintingStyle.fill;
-    paint_68_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_68, paint_68_fill);
+    Paint paint68Fill = Paint()..style = PaintingStyle.fill;
+    paint68Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_68, paint68Fill);
 
     Path path_69 = Path();
     path_69.moveTo(436.686, 465.681);
@@ -1091,10 +1088,10 @@ class HouseCustomPainter extends CustomPainter {
     path_69.cubicTo(435.343, 462.681, 436.686, 464.024, 436.686, 465.681);
     path_69.close();
 
-    Paint paint_69_fill = Paint()..style = PaintingStyle.fill;
-    paint_69_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_69, paint_69_fill);
+    Paint paint69Fill = Paint()..style = PaintingStyle.fill;
+    paint69Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_69, paint69Fill);
 
     Path path_70 = Path();
     path_70.moveTo(405.186, 515.181);
@@ -1104,10 +1101,10 @@ class HouseCustomPainter extends CustomPainter {
     path_70.cubicTo(403.843, 512.181, 405.186, 513.524, 405.186, 515.181);
     path_70.close();
 
-    Paint paint_70_fill = Paint()..style = PaintingStyle.fill;
-    paint_70_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_70, paint_70_fill);
+    Paint paint70Fill = Paint()..style = PaintingStyle.fill;
+    paint70Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_70, paint70Fill);
 
     Path path_71 = Path();
     path_71.moveTo(717.186, 335.181);
@@ -1117,10 +1114,10 @@ class HouseCustomPainter extends CustomPainter {
     path_71.cubicTo(715.843, 332.181, 717.186, 333.524, 717.186, 335.181);
     path_71.close();
 
-    Paint paint_71_fill = Paint()..style = PaintingStyle.fill;
-    paint_71_fill.color =
-        Color(0xffF0F0F0).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_71, paint_71_fill);
+    Paint paint71Fill = Paint()..style = PaintingStyle.fill;
+    paint71Fill.color =
+        const Color(0xffF0F0F0).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_71, paint71Fill);
 
     Path path_72 = Path();
     path_72.moveTo(699.186, 356.181);
@@ -1130,10 +1127,10 @@ class HouseCustomPainter extends CustomPainter {
     path_72.cubicTo(697.843, 353.181, 699.186, 354.524, 699.186, 356.181);
     path_72.close();
 
-    Paint paint_72_fill = Paint()..style = PaintingStyle.fill;
-    paint_72_fill.color =
-        Color(0xffF0F0F0).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_72, paint_72_fill);
+    Paint paint72Fill = Paint()..style = PaintingStyle.fill;
+    paint72Fill.color =
+        const Color(0xffF0F0F0).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_72, paint72Fill);
 
     Path path_73 = Path();
     path_73.moveTo(682.686, 345.681);
@@ -1143,10 +1140,10 @@ class HouseCustomPainter extends CustomPainter {
     path_73.cubicTo(681.343, 342.681, 682.686, 344.024, 682.686, 345.681);
     path_73.close();
 
-    Paint paint_73_fill = Paint()..style = PaintingStyle.fill;
-    paint_73_fill.color =
-        Color(0xffF0F0F0).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_73, paint_73_fill);
+    Paint paint73Fill = Paint()..style = PaintingStyle.fill;
+    paint73Fill.color =
+        const Color(0xffF0F0F0).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_73, paint73Fill);
 
     Path path_74 = Path();
     path_74.moveTo(591.186, 360.681);
@@ -1156,10 +1153,10 @@ class HouseCustomPainter extends CustomPainter {
     path_74.cubicTo(589.843, 357.681, 591.186, 359.024, 591.186, 360.681);
     path_74.close();
 
-    Paint paint_74_fill = Paint()..style = PaintingStyle.fill;
-    paint_74_fill.color =
-        Color(0xffF0F0F0).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_74, paint_74_fill);
+    Paint paint74Fill = Paint()..style = PaintingStyle.fill;
+    paint74Fill.color =
+        const Color(0xffF0F0F0).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_74, paint74Fill);
 
     Path path_75 = Path();
     path_75.moveTo(822.186, 308.181);
@@ -1169,10 +1166,10 @@ class HouseCustomPainter extends CustomPainter {
     path_75.cubicTo(820.843, 305.181, 822.186, 306.524, 822.186, 308.181);
     path_75.close();
 
-    Paint paint_75_fill = Paint()..style = PaintingStyle.fill;
-    paint_75_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_75, paint_75_fill);
+    Paint paint75Fill = Paint()..style = PaintingStyle.fill;
+    paint75Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_75, paint75Fill);
 
     Path path_76 = Path();
     path_76.moveTo(660.314, 300.681);
@@ -1182,10 +1179,10 @@ class HouseCustomPainter extends CustomPainter {
     path_76.cubicTo(658.971, 297.681, 660.314, 299.024, 660.314, 300.681);
     path_76.close();
 
-    Paint paint_76_fill = Paint()..style = PaintingStyle.fill;
-    paint_76_fill.color =
-        Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
-    canvas.drawPath(path_76, paint_76_fill);
+    Paint paint76Fill = Paint()..style = PaintingStyle.fill;
+    paint76Fill.color =
+        const Color(0xffFFFFFF).withOpacity((0.1 + t).clamp(0.0, 1.0));
+    canvas.drawPath(path_76, paint76Fill);
   }
 
   @override

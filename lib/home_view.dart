@@ -1,7 +1,4 @@
 import 'dart:async';
-import 'dart:math';
-import 'dart:ui' as ui;
-import 'package:custom_painter/Widget/dragDown_floating_button.dart';
 import 'package:custom_painter/Widget/draggable_floating_button.dart';
 import 'package:custom_painter/painter/button_painter.dart';
 import 'package:custom_painter/painter/grid_painter.dart';
@@ -27,6 +24,7 @@ class _HomeViewState extends State<HomeView>
 
   double positionX = 0;
   double positionY = 2000;
+  double positionY2 = -500;
   double screenWidth = 0;
   double screenHeight = 0;
   bool isGridPaper = false;
@@ -47,15 +45,15 @@ class _HomeViewState extends State<HomeView>
 
     _animation = Tween<double>(begin: 0.1, end: 1.0).animate(_controller)
       ..addListener(() {
-        setState(() {}); // 애니메이션 값이 변경될 때마다 화면을 다시 그림
+        setState(() {});
       });
 
-    _controller.repeat(reverse: true); // 애니메이션을 반복하면서 reverse
+    _controller.repeat(reverse: true);
 
     Timer.periodic(const Duration(milliseconds: 100), (timer) {
       if (t < 1.0) {
         setState(() {
-          t += 0.02;
+          t += 0.01;
         });
       }
     });
@@ -63,8 +61,9 @@ class _HomeViewState extends State<HomeView>
       screenWidth = MediaQuery.of(context).size.width;
       screenHeight = MediaQuery.of(context).size.height;
 
-      positionX = screenWidth / 2;
+      positionX = screenWidth / 2 - 450;
       positionY = screenHeight + 500;
+      positionY2 = -500;
     });
   }
 
@@ -74,10 +73,11 @@ class _HomeViewState extends State<HomeView>
     });
   }
 
-  void fontIncrease() {
+  void showText() {
     setState(() {
       positionY = screenHeight / 2;
       positionX = screenWidth / 2 - 450;
+      positionY2 = screenHeight / 2;
     });
   }
 
@@ -130,10 +130,10 @@ class _HomeViewState extends State<HomeView>
     return Stack(
       children: [
         GridView.builder(
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 200, // 열의 개수
-            crossAxisSpacing: 0, // 열 간의 간격
-            mainAxisSpacing: 0, // 행 간의 간격
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 200,
+            crossAxisSpacing: 0,
+            mainAxisSpacing: 0,
           ),
           itemCount: items.length,
           itemBuilder: (context, index) {
@@ -148,7 +148,8 @@ class _HomeViewState extends State<HomeView>
             );
           },
         ),
-        _buildMain(),
+        SizedBox(
+            width: screenWidth, height: screenHeight, child: _buildMain(),),
       ],
     );
   }
@@ -159,20 +160,20 @@ class _HomeViewState extends State<HomeView>
         setState(() {
           positionX = details.localPosition.dx - 430;
           positionY = details.localPosition.dy - 70;
+          positionY2 = details.localPosition.dy - 70;
         });
       },
       child: Stack(
         children: [
           AnimatedPositioned(
-            duration: Duration(milliseconds: 2000),
+            duration: const Duration(milliseconds: 2000),
             curve: Curves.fastEaseInToSlowEaseOut,
             left: positionX,
             top: positionY,
-            child: Text(
+            child: const Text(
               'CUSTOM PAINTER',
               textAlign: TextAlign.center,
               style: TextStyle(
-                // fontSize: _fontSizeAnimation.value,
                 color: Colors.white,
                 fontSize: 100,
               ),
@@ -182,7 +183,7 @@ class _HomeViewState extends State<HomeView>
             left: screenWidth / 2 - 650,
             top: 100,
             child: CustomPaint(
-              size: Size(720, 720),
+              size: const Size(720, 720),
               painter: SmokePainter(animationValue: _animation.value, t: t),
             ),
           ),
@@ -190,7 +191,7 @@ class _HomeViewState extends State<HomeView>
             left: screenWidth / 2 - 650,
             top: 100,
             child: CustomPaint(
-              size: Size(720, 720),
+              size: const Size(720, 720),
               painter: HouseCustomPainter(t: t),
             ),
           ),
@@ -198,7 +199,7 @@ class _HomeViewState extends State<HomeView>
             left: screenWidth / 2 - 650,
             top: 100,
             child: CustomPaint(
-              size: Size(300, 300),
+              size: const Size(300, 300),
               painter: SnowmanPainter(t: t, color: color),
             ),
           ),
@@ -207,17 +208,17 @@ class _HomeViewState extends State<HomeView>
                   left: screenWidth / 2 + 250,
                   top: 20,
                   child: CustomPaint(
-                    size: Size(550, 650),
+                    size: const Size(550, 700),
                     painter: SpeechBubblePainter(),
-                    child: QuizContainer(),
+                    child: const QuizContainer(),
                   ),
                 )
-              : SizedBox(),
+              : const SizedBox(),
           AnimatedPositioned(
-              duration: Duration(milliseconds: 3000),
+              duration: const Duration(milliseconds: 3000),
               curve: Curves.fastEaseInToSlowEaseOut,
               left: positionX,
-              top: positionY,
+              top: positionY2,
               child: Text(
                 'CUSTOM PAINTER',
                 textAlign: TextAlign.center,
@@ -229,23 +230,33 @@ class _HomeViewState extends State<HomeView>
                     ..color = Colors.white,
                 ),
               )),
-          // Positioned(
-          //     left: screenWidth / 2,
-          //     top: screenHeight / 2 + 250,
-          //     child: ElevatedButton(
-          //         onPressed: () {
-          //           fontIncrease();
-          //         },
-          //         child: Text('START'))),
           Positioned(
             left: screenWidth / 2,
             top: screenHeight / 2 + 250,
-            child: CustomPaint(
-                painter: ButtonPainter(color: buttonColor,t: t),
-                child: Container(
-                  width: 280,
-                  height: 230,
-                )),
+            child: MouseRegion(
+              cursor: SystemMouseCursors.click,
+              onEnter: (_) {
+                setState(() {
+                  buttonColor = Colors.amber;
+                });
+              },
+              onExit: (_) {
+                setState(() {
+                  buttonColor = Colors.white;
+                });
+              },
+              child: GestureDetector(
+                onTap: () {
+                  showText();
+                },
+                child: CustomPaint(
+                    painter: ButtonPainter(color: buttonColor, t: t),
+                    child: Container(
+                      width: 100,
+                      height: 40,
+                    )),
+              ),
+            ),
           ),
           Positioned(
             left: screenWidth / 2 + 130,
@@ -272,35 +283,6 @@ class _HomeViewState extends State<HomeView>
               ),
             ),
           ),
-          Positioned(
-              left: screenWidth / 2,
-              top: screenHeight / 2 + 250,
-              child: MouseRegion(
-                cursor: SystemMouseCursors.click,
-                onEnter: (_) {
-
-                  setState(() {
-                    buttonColor = Colors.amber;
-                  });
-                },
-                onExit: (_) {
-
-                  setState(() {
-                    buttonColor = Colors.white;
-                  });
-                },
-
-                child: GestureDetector(
-                  onTap: () {
-                    fontIncrease();
-                  },
-                  child: Container(
-                    color: Colors.transparent,
-                    width: 95,
-                    height: 35,
-                  ),
-                ),
-              ))
         ],
       ),
     );

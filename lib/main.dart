@@ -1,15 +1,14 @@
 import 'package:custom_painter/Widget/dragDown_floating_button.dart';
-import 'package:custom_painter/Widget/draggable_floating_button.dart';
-import 'package:custom_painter/painter/grid_painter.dart';
 import 'package:custom_painter/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp(ProviderScope(child: const MyApp()));
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
+
   const MyApp({super.key});
 
   @override
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'SebangGothic'
       ),
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
+      home: const Scaffold(
           floatingActionButton: DragDownFloatingActionButton(),
           body: HomeView()),
     );

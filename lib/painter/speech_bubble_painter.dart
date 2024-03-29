@@ -7,7 +7,7 @@ class SpeechBubblePainter extends CustomPainter {
       ..color = Colors.white
       ..style = PaintingStyle.fill;
 
-    final double radius = 10.0;
+    const double radius = 10.0;
 
     final Path path = Path()
       ..moveTo(radius, size.height) // 왼쪽 하단
